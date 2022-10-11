@@ -35,14 +35,13 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #231440;
     align-items: center;
 }
-
 
 .logo {
     padding-left: 70px;
@@ -54,13 +53,22 @@ header {
     text-align: center;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-left: 10px;
     text-transform: uppercase;
-    border-right: solid 1px white;
+}
+
+.item {
+    opacity: 0;
+    overflow: hidden;
+    width: 50px;
 }
 
 nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #231440;
+    align-items: center;
     padding-right: 40px;
 }
 
@@ -69,6 +77,7 @@ nav {
     color: white;
     background-color:#976bf0;
     padding-right: 10px;
+    padding-left: 10px;
     border-radius: 10px;
 }
 
@@ -79,7 +88,7 @@ main {
     align-items: stretch;
     align-items: center;
     padding-top: 7em;
-    padding-bottom: 200px;
+    padding-bottom: 130px;
     border-bottom: 1px solid #ffffff;
 }
 
@@ -171,7 +180,7 @@ footer{
     }
 
     .main-img {
-        width: 10rem;
+        width: 15rem;
         transform: translate(0px);
         animation: float 5s ease-in-out infinite;
     
@@ -187,6 +196,24 @@ footer{
 
 @media only screen and (min-width: 320px ) and (max-width: 532px) {
 
+    main {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 7em;
+        padding-bottom: 130px;
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    .main-img {
+        width: 15rem;
+        transform: translate(0px);
+        animation: float 5s ease-in-out infinite;
+    
+    }
+
     .proj1 {
         text-align: center;
         display: flex;
@@ -216,7 +243,8 @@ footer{
     }
 
     .main-img {
-        width: 10rem;
+        padding-top: 60px;
+        width: 15rem;
         transform: translate(0px);
         animation: float 5s ease-in-out infinite;
     
@@ -230,6 +258,25 @@ footer{
 }
 
 @media only screen and (min-width: 0px) and (max-width: 320px){
+
+    main {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 7em;
+        padding-bottom: 200px;
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    .main-img {
+        width: 15rem;
+        transform: translate(0px);
+        animation: float 5s ease-in-out infinite;
+    
+    }
+
     .proj1 {
         text-align: center;
         display: flex;
@@ -256,13 +303,6 @@ footer{
         border-radius: 20px;
         box-shadow: 5px 0px 10px #2314409a;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    .main-img {
-        width: 10rem;
-        transform: translate(0px);
-        animation: float 5s ease-in-out infinite;
-    
     }
 
     img {
