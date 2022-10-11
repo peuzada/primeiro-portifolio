@@ -1,274 +1,42 @@
-@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/robo2.png" alt="logo" class="logo">
+    <nav>
+        <a href="" class="header-item">1º site</a>
+        <a href="" class="header-item">2º site</a>
+        <a href="" class="header-item">3º site</a>
+        <a href="" class="header-item">4º site</a>
+    </nav>
+</header>
+<main>
+        <div class="main-text">
+            <h1>bem vindo</h1>
+            <p>esse site tem o proposito de demonstrar <br> meus resultados com <strong>html e css,</strong> espero que gostem :) </p>
+        </div>
+        <img src="imagens/satelite.png" alt="satelite.png" class="main-img">
+    </main>
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    <section class="proj1">
 
-/* Color Theme Swatches in Hex */
-.Roxo-intenso-1-hex { color: #8B52FF; }
-.Roxo-intenso-2-hex { color: #7D49E6; }
-.Roxo-intenso-3-hex { color: #693DBF; }
-.Roxo-intenso-4-hex { color: #462980; }
-.Roxo-intenso-5-hex { color: #231440; }
-
-
-* {
-    margin: 0;
-    padding: 0;
-
-}
-
-body {
-    background-image: linear-gradient(90deg,#693DBF, #462980);
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-     background: #231440;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #693DBF;
-    border-radius: 20px;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #231440;
-    align-items: center;
-}
+               <img src="imagens/2022-10-09.png" alt="">
 
 
-.logo {
-    padding-left: 70px;
-    width: 60px;
-}
+        <div class="texto1.0">
+            <h1 class="tit1">PRIMEIRO PROJETO</h1>
+            <p class="texto1">Site desenvolvido no curso: <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">"CursoEmVídeo"</a>, sendo um trabalho onde tenho muito apreço e carinho, pois foi de lá que tudo começou!</p>
+        </div>
+    </section>
 
-.header-item {
-    color: #6f42c9;
-    text-align: center;
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-right: 20px;
-    padding-left: 10px;
-    text-transform: uppercase;
-    border-right: solid 1px white;
-}
-
-nav {
-    padding-right: 40px;
-}
-
-.header-item:hover {
-    border: none;
-    color: white;
-    background-color:#976bf0;
-    padding-right: 10px;
-    border-radius: 10px;
-}
-
-main {
-    text-align: start;
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    align-items: center;
-    padding-top: 7em;
-    padding-bottom: 200px;
-    border-bottom: 1px solid #ffffff;
-}
-
-.main-img {
-    width: 20rem;
-    transform: translate(0px);
-    animation: float 5s ease-in-out infinite;
-
-}
-
-@keyframes float{
-    0% {
-        transform: translate(0px);
-    }
-    50% {
-        transform: translate(-30px);
-    }
-    100% {
-        transform: translate(0px);
-    }
-}
-
-h1 {
-    font-size: 3em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-main > div > p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-top: 10px;
-    font-size: 1.5em;
-    color: #231440;
-}
-
-.proj1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 80px;
-}
-
-.proj1 > div > p {
-    height: 100px;
-    width: 500px;
-    font-size: 21px;
-    text-align: justify;
-    align-items: content;
-    background-color: white;
-    padding: 20px 10px 15px 10px;
-    border-radius: 20px;
-    box-shadow: 5px 0px 10px #2314409a;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.tit1 {
-    padding-bottom: 20px;
-}
-
-strong {
-    color: #976bf0;
-}
-
-img {
-    display: flex;
-    width: 400px;
-}
-
-footer{
-    text-align: center;
-    color: white;
-    padding: 10px;
-    background: #231440;
-    margin-top: 200px;
-}
-
-@media only screen and (min-width: 532px ) and (max-width: 1400px) {
-
-    .proj1 {
-        text-align: center;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-        padding: 80px;
-
-    }
-
-    .main-img {
-        width: 10rem;
-        transform: translate(0px);
-        animation: float 5s ease-in-out infinite;
-    
-    }
-
-    img {
-        padding-top: 50px;
-        width: 500px;
-    }
-
-
-}
-
-@media only screen and (min-width: 320px ) and (max-width: 532px) {
-
-    .proj1 {
-        text-align: center;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-        padding: 0px;
-
-    }
-
-    .proj1 > div {
-        padding-top: 50px;
-    }
-
-    .proj1 > div > p {
-        height: 100px;
-        width: 280px;
-        font-size: 21px;
-        text-align: center;
-        align-items: content;
-        background-color: white;
-        margin-left: 70px;
-        padding-bottom: 60px;
-        border-radius: 20px;
-        box-shadow: 5px 0px 10px #2314409a;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    .main-img {
-        width: 10rem;
-        transform: translate(0px);
-        animation: float 5s ease-in-out infinite;
-    
-    }
-
-    img {
-        padding-top: 50px;
-        width: 400px;
-    }
-
-}
-
-@media only screen and (min-width: 0px) and (max-width: 320px){
-    .proj1 {
-        text-align: center;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-        padding: 0px;
-
-    }
-
-    .proj1 > div {
-        padding-top: 50px;
-    }
-
-    .proj1 > div > p {
-        height: 100px;
-        width: 280px;
-        font-size: 21px;
-        text-align: center;
-        align-items: content;
-        background-color: white;
-        margin-left: 70px;
-        padding-bottom: 60px;
-        border-radius: 20px;
-        box-shadow: 5px 0px 10px #2314409a;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    .main-img {
-        width: 10rem;
-        transform: translate(0px);
-        animation: float 5s ease-in-out infinite;
-    
-    }
-
-    img {
-        padding-top: 50px;
-        width: 400px;
-    }
-
-
-}
+    <footer>Site feito e exclusivo por <strong>Pedro Daniel</strong></footer>
+</body>
+</html>
